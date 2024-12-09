@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转中间页</title>
+    <link rel="stylesheet" href="css/st.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 0 auto;
+            text-align: center;
+        }
+        #top{
+            max-width: 500px;  
+        }
+        .img{
+            max-width: 280px;
+        }
+        .img1{
+            max-width: 100px;
+        }
+        #logo{
+            margin-top: 50px;
+        }
+        #tx1{
+            margin-top: 17px;
+            font-size: 15px;
+            color: rgb(#186, #186, #186);
+        }
+        #tx2{
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgb(#168, #167, #168);
+        }
+
+        #but_off{
+            margin-top: 28px;
+            max-height: 50px;
+            line-height: 50px;
+            max-width: 300px;
+            background-color: rgb(5, 174, 86);
+            border-radius: 8px;
+            color: #dffced;
+            text-align: center;
+            font-size: 16px;
+        }
+        #but_off:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>  
+    <div id="top">
+        <img src="images/top.png" class="img">
+    </div>
+    
+    <div id="logo">
+        <img src="images/winxlogo.png" class="img1">
+    </div>
+    
+    <div id="tx1">正在跳转到微信</div>
+    <div class="loader">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div id="tx2">如未自动打开微信请点击下方按钮</div>
+
+    <div id="but_off" onclick="jump()">
+        打开微信
+    </div>
+    <script>
+        function jump(){
+            window.location.href="https://work.weixin.qq.com/kfid/kfc04b5e0c8de93fc39";
+        }
+    </script>
+</body>
+</html>
