@@ -76,7 +76,10 @@
         打开微信
     </div>
     <script>
-        window.location.href="https://work.weixin.qq.com/kfid/kfcfb3a0e437dab700a";
+         window.onload = function() {
+            console.info(document.referrer)
+        };
+
         function jump(){
             window.location.href="https://work.weixin.qq.com/kfid/kfcfb3a0e437dab700a";
         }
